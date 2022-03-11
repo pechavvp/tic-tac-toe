@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-info">
+            <p class="modal-info-title"></p>
+            <p class="modal-info-moves"></p>
+            <button class="modal-info-reload" onclick="location.reload(); return false;">Play again</button>
+            <button class="modal-info-history" onclick="return false;">View game history</button>
+        </div>
+        <div class="modal-history">
+            <p class="modal-history-title">Game history</p>
+            <div class="modal-history-list"></div>
+        </div>
+    </div>
+    <div class="main-block">
+        <div class="main-block-wrap">
+            <ul class="zone-list">
+                <li class="zone-item zone-1"><div class="figure"></div></li>
+                <li class="zone-item zone-2"><div class="figure"></div></li>
+                <li class="zone-item zone-3"><div class="figure"></div></li>
+                <li class="zone-item zone-4"><div class="figure"></div></li>
+                <li class="zone-item zone-5"><div class="figure"></div></li>
+                <li class="zone-item zone-6"><div class="figure"></div></li>
+                <li class="zone-item zone-7"><div class="figure"></div></li>
+                <li class="zone-item zone-8"><div class="figure"></div></li>
+                <li class="zone-item zone-9"><div class="figure"></div></li>
+            </ul>
+        </div>
+        <audio class="audio" src="./sounds/turn.mp3"></audio>
+    </div>
+    <footer class="footer-block">
+            <ul class="footer-copyright">
+                <li class="footer-copyright-item">©</li>
+                <li class="footer-copyright-item">2022</li>
+                <li class="footer-copyright-item"><a class="footer-copyright-item-link" href="https://github.com/pechavvp" target="_blank">github</a></li>
+            </ul>
+            <a class="footer-school-link" href="https://rs.school/js-stage0" target="_blank"><img src="./img/rss.svg" alt="RS School"></a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
